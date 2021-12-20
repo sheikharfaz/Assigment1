@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{8C6B75BD-403F-4D16-8A52-C4470D239D69}|Default">
+  <MonoDevelop.Ide.ItemProperties.Assignment__Level1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Controllers/QueryController.cs" Line="37" Column="1" />
+      <File FileName="helper/QuerableExtensions.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="helper/QueryDBContext.cs" />
+      <File FileName="Models/QueryParameter.cs" />
+      <File FileName="Models/WhereClause.cs" />
+      <File FileName="Models/Student.cs" />
+      <File FileName="helper/GroupByExpression.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment_Level1" expanded="True">
+            <Node name="Tests" expanded="True">
+              <Node name="Tests" expanded="True" />
+            </Node>
+            <Node name="Assignment_Level1" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="helper" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>AssignmentTests/AssignmentTests.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Tests.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
