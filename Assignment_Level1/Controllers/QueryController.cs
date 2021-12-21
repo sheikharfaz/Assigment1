@@ -23,24 +23,30 @@ namespace Assignment_Level1.Controllers
        [HttpPost]
         public IQueryable<object> Post([FromBody] QueryParameter value)
         {
-            //Dictionary<string, Type> TableTypeDictionary = new Dictionary<string, Type>()
-            //{
-            //    {"Students",typeof(Student) },
-            //};
+            Dictionary<string, Type> TableTypeDictionary = new Dictionary<string, Type>()
+            {
+                {"Students",typeof(Student) },
+            };
 
             //var tableData = _dbContext.Query("Student");
-            var lamba = GroupByExpression.GroupByExpressions<Student>(value.GroupByColumns);
 
-            var selectResult = _dbContext.Students.SelectMembers(value.SelectColumns);
+            //var lamba = GroupByExpression.GroupByExpressions<Student>(value.GroupByColumns);
+
+            //var selectResult = _dbContext.Students.SelectMembers(value.SelectColumns);
 
             //var groupByResult = selectResult.GroupBy(lamba.Compile()).AsQueryable();
 
             //var orderByResult = selectResult.OrderByMembers(value.OrderByColumns).AsQueryable();
 
-            var result = selectResult.WhereMembers(value.WhereClause.Field, value.WhereClause.WhereClauseValue)
-                                           ;
+            var result = _dbContext.Students.SelectMembers(value.SelectColumns).GroupByExpressions(value.GroupByColumns)
+                .OrderByMembers(value.OrderByColumns)
+                .WhereMembers(value.WhereClause.Field, value.WhereClause.WhereClauseValue);
+                
+                                           
             return result;
         }
+
+
 
 
     }

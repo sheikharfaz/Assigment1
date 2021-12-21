@@ -2,11 +2,11 @@
 {
     public class WhereClause
     {
-        public string Condition { get; set; }
+        public string Condition { get; set; } 
 
-        public string Field { get; set; }
+        public string Field { get; set; } 
 
-        public string WhereClauseValue { get; set; }
+        public int WhereClauseValue { get; set; } 
 
     }
 }

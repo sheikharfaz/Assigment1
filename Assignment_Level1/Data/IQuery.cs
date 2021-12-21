@@ -1,9 +1,10 @@
-﻿using Assignment_Level1.Models;
+﻿using System.Linq;
+using Assignment_Level1.Models;
 
 namespace Assignment_Level1.Data
 {
     public interface IQuery
     {
-        string Post(QueryParameter query);
+        IQueryable<object> Post(QueryParameter value);
     }
 }
